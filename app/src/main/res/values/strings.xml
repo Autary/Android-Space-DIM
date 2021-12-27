@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Space DIM</string>
+    <string name="login">Login to play astronaut</string>
+    <string name="fake_id">astronaut n°FR8742</string>
+    <string name="Your_Name">Your Name</string>
+    <string name="content_nasa_icon">nasa red icon</string>
+    <string name="content_avatar_icon">Astronaut avatar icon</string>
+    <string name="launch">Launch</string>
 </resources>
