@@ -27,5 +27,14 @@
         android:id="@+id/waintingFragment"
         android:name="com.example.spacedim.WaintingFragment"
         android:label="fragment_wainting"
-        tools:layout="@layout/fragment_wainting" />
+        tools:layout="@layout/fragment_wainting" >
+        <action
+            android:id="@+id/action_waintingFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.spacedim.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
 </navigation>
