@@ -6,4 +6,10 @@
     <string name="content_nasa_icon">nasa red icon</string>
     <string name="content_avatar_icon">Astronaut avatar icon</string>
     <string name="launch">Launch</string>
+    <string name="waiting_room">Waiting room</string>
+    <string name="join_a_room">Enter a room name or create a game</string>
+    <string name="inactive_socket">Socket inactive</string>
+    <string name="active_socket">Socket active</string>
+    <string name="join_room">Join a game room</string>
+    <string name="no_room_joined">No room joined</string>
 </resources>
