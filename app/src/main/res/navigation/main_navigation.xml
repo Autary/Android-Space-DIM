@@ -36,5 +36,30 @@
         android:id="@+id/gameFragment"
         android:name="com.example.spacedim.GameFragment"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" />
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_looseFragment"
+            app:destination="@id/looseFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_winFragment"
+            app:destination="@id/winFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/looseFragment"
+        android:name="com.example.spacedim.LooseFragment"
+        android:label="fragment_loose"
+        tools:layout="@layout/fragment_loose" >
+        <action
+            android:id="@+id/action_looseFragment_to_waintingFragment"
+            app:destination="@id/waintingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/winFragment"
+        android:name="com.example.spacedim.WinFragment"
+        android:label="fragment_win"
+        tools:layout="@layout/fragment_win" >
+        <action
+            android:id="@+id/action_winFragment_to_waintingFragment"
+            app:destination="@id/waintingFragment" />
+    </fragment>
 </navigation>
