@@ -9,7 +9,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.spacedim.databinding.FragmentLooseBinding
 
-class LooseFragment : Fragment() {
+class LooseFragment : Fragment(), LifeCycleLogs {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -18,6 +18,36 @@ class LooseFragment : Fragment() {
             view.findNavController().navigate(R.id.action_looseFragment_to_waintingFragment)
         }
         return binding.root
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super<Fragment>.onCreate(savedInstanceState)
+        super<LifeCycleLogs>.onCreate()
+    }
+
+    override fun onStart() {
+        super<Fragment>.onStart()
+        super<LifeCycleLogs>.onStart()
+    }
+
+    override fun onResume() {
+        super<Fragment>.onResume()
+        super<LifeCycleLogs>.onResume()
+    }
+
+    override fun onPause() {
+        super<Fragment>.onPause()
+        super<LifeCycleLogs>.onPause()
+    }
+
+    override fun onStop() {
+        super<Fragment>.onStop()
+        super<LifeCycleLogs>.onStop()
+    }
+
+    override fun onDestroy() {
+        super<Fragment>.onDestroy()
+        super<LifeCycleLogs>.onDestroy()
     }
 
 }

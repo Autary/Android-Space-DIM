@@ -40,4 +40,6 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
     implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
     implementation "com.google.android.material:material:$version"
+
+    implementation "com.jakewharton.timber:timber:5.0.1"
 }

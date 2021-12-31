@@ -11,7 +11,7 @@ import com.example.spacedim.databinding.FragmentCreateRoomBinding
 import com.example.spacedim.databinding.FragmentLoginBinding
 
 
-class LoginFragment : Fragment() {
+class LoginFragment : Fragment(), LifeCycleLogs {
 
 
     override fun onCreateView(
@@ -23,5 +23,36 @@ class LoginFragment : Fragment() {
             view.findNavController().navigate(R.id.action_loginFragment_to_createRoomFragment)
         }
         return binding.root
+    }
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super<Fragment>.onCreate(savedInstanceState)
+        super<LifeCycleLogs>.onCreate()
+    }
+
+    override fun onStart() {
+        super<Fragment>.onStart()
+        super<LifeCycleLogs>.onStart()
+    }
+
+    override fun onResume() {
+        super<Fragment>.onResume()
+        super<LifeCycleLogs>.onResume()
+    }
+
+    override fun onPause() {
+        super<Fragment>.onPause()
+        super<LifeCycleLogs>.onPause()
+    }
+
+    override fun onStop() {
+        super<Fragment>.onStop()
+        super<LifeCycleLogs>.onStop()
+    }
+
+    override fun onDestroy() {
+        super<Fragment>.onDestroy()
+        super<LifeCycleLogs>.onDestroy()
     }
 }
